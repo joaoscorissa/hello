@@ -72,6 +72,7 @@ func testaSite(site string) {
 
 func readFile() []string {
 	// arq, err := os.Open("sites.txt")
+
 	arq, err := ioutil.ReadFile("sites.txt")
 	if err != nil {
 		fmt.Print("ERROR", err)
